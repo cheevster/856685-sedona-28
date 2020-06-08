@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -40,11 +41,55 @@
     </header>
     <main>
         <div class="filters">
-            <fieldset>
-                <!--надо оплатить интерактив и пройти заново, всё забылось-->
-            </fieldset>
+            <form action="https://echo.htmlacademy.ru/courses" method="post" >
+                <fieldset class="structure">
+                    <legend>Инфраструктура:</legend>
+                    <label>
+                        <input type="checkbox" name="pool" checked> бассейн
+                    </label>
+                    <label>
+                        <input type="checkbox" name="parking">парковка
+                    </label>
+                    <label>
+                        <input type="checkbox" name="wifi"> WI-FI
+                    </label>
+                </fieldset>
+                <fieldset class="type">
+                    <legend>Тип жилья:</legend>
+                    <label>
+                        <input type="checkbox" name="hotel" checked> гостиница
+                    </label>
+                    <label>
+                        <input type="checkbox" name="motel" checked> мотель
+                    </label>
+                    <label>
+                        <input type="checkbox" name="appart" checked> апартаменты
+                    </label>
+                    </fieldset>
+                    <fieldset>
+                    <legend>стоимость в сутки (р):</legend>
+                        <label for="starting_price">от
+                            <input type="text" id="starting_price">
+                        </label>
+                        <label for="ending_price">от
+                            <input type="text" id="ending_price">
+                        </label>
+                        <!--какая-то красивая шкала с двумя кнобами-->
+                        <button type="submit">показать</button>
+                    </fieldset>
+            </form>
         </div>
+        
         <div class="hotels">
+            <div class="sorting">
+                <p class="h2-like">найдено:3</p>
+                <p class="h3-like">сортировка:</p>
+                <ul>
+                    <li><a href="#">по цене</a></li>
+                    <li><a href="#">по типу</a></li>
+                    <li><a href="#">по рейтингу</a></li>
+                </ul>
+            </div>
             <div class="hotel_id">
                 <img src="img/hotel.jpg" alt="amara resort" width="135" height="90">
                 <h2><a href="#">Amara resort & SPA</a></h2>

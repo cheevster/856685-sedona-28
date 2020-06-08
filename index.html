@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -157,36 +158,38 @@
                 Укажите предполагаемые даты поездки,<br>
                 и мы покажем вам лучшие предложения гостиниц в седоне
             </p>
-            <button type="button" class="search">Поиск гостиницы в Седоне</button>
-            <div class="search_form">
-                <div>
-                    <label for="date1">Дата заезда:</label>
-                    <input type="text" id="date1">
-                    <button type="button">Календарь</button>
-                </div>
-                <div>
-                    <label for="date2">Дата выезда:</label>
-                    <input type="text" id="date2">
-                    <button type="button">Календарь</button>
-                </div>
-                <div>
-                    <label for="adults">Взрослые:</label>
+            <a class="search">Поиск гостиницы в Седоне</a>    
+            <form action="https://echo.htmlacademy.ru/courses" method="post">
+                <div class="search_form">
                     <div>
-                        <button type="button">Минус</button>
-                        <input type="number" id="adults">
-                        <button type="button">Плюс</button>
+                        <label for="date1">Дата заезда:</label>
+                        <input type="text" id="date1" value="24 апреля 2017">
+                        <button type="button">Календарь</button>
                     </div>
-                </div>
-                <div>
-                    <label for="babys">Дети:</label>
                     <div>
-                        <button type="button">Минус</button>
-                        <input type="number" id="babys">
-                        <button type="button">Плюс</button>
+                        <label for="date2">Дата выезда:</label>
+                        <input type="text" id="date2" value="4 июля 2017">
+                        <button type="button">Календарь</button>
                     </div>
+                    <div>
+                        <label for="adults">Взрослые:</label>
+                        <div>
+                            <button type="button">Минус</button>
+                            <input type="number" id="adults" value="2">
+                            <button type="button">Плюс</button>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="babys">Дети:</label>
+                        <div>
+                            <button type="button">Минус</button>
+                            <input type="number" id="babys" value="0">
+                            <button type="button">Плюс</button>
+                        </div>
+                    </div>
+                    <button type="submit">Найти</button>
                 </div>
-                <button type="submit">Найти</button>
-            </div>
+            </form>
         </section>
     </main>
     <footer>
