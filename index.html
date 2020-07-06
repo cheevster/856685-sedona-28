@@ -4,13 +4,15 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="main-nav">
+            <ul class="nav">
                 <li>
                     <a href="">
                         Информация
@@ -42,8 +44,7 @@
     <main>
         <!--хорошо знакомый веб программист мне высказался, что картинки в ЦСС плохая практика, а ты как думаешь? Я планировал и фото и маску туда-->
         <div class="welcome">
-            <img src="img/welcome.svg"
-                alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="459" height="353">
+            <img src="img/welcome.svg" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="459" height="353">
         </div>
         <section>
             <header>
@@ -72,7 +73,9 @@
                     <p>
                         <img src="img/feature-picture.jpg" width="800" height="256" alt="городской вид">
                     </p>
-                    <ul>
+                </li>
+                <li>
+                    <ul class="adv">
                         <li>
                             <h3>
                                 Жильё
@@ -116,38 +119,41 @@
                     </div>
                 </li>
                 <li>
-                    <h3>
-                        Небольшая<br>площадь
-                    </h3>
-                    <p>
-                        — №3 —
-                    </p>
-                    <p>
-                        Все достопримечательности<br>находятся очень близко
-                    </p>
-                </li>
-                <li>
-                    <h3>
-                        Красивая<br>дорога
-                    </h3>
-                    <p>
-                        — №4 —
-                    </p>
-                    <p>
-                        Ехать в Седону из Лас-Вегаса<br>совсем не скучно
-                    </p>
-                </li>
-                <li>
-                    <h3>
-                        Мало<br>туристов
-                    </h3>
-                    <p>
-                        — №5 —
-                    </p>
-                    <p>
-                        Большинство едет в гранд каньон<br>и толпится там
-                    </p>
-                </li>
+                    <ul class="adv">
+                        <li>
+                            <h3>
+                                Небольшая<br>площадь
+                            </h3>
+                            <p>
+                                — №3 —
+                            </p>
+                            <p>
+                                Все достопримечательности<br>находятся очень близко
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                Красивая<br>дорога
+                            </h3>
+                            <p>
+                                — №4 —
+                            </p>
+                            <p>
+                                Ехать в Седону из Лас-Вегаса<br>совсем не скучно
+                            </p>
+                        </li>
+                        <li>
+                            <h3>
+                                Мало<br>туристов
+                            </h3>
+                            <p>
+                                — №5 —
+                            </p>
+                            <p>
+                                Большинство едет в гранд каньон<br>и толпится там
+                            </p>
+                        </li>
+                    </ul>
             </ul>
         </section>
         <section>
@@ -194,7 +200,7 @@
     </main>
     <footer>
         <section>
-            <h2>
+            <h2 >
                 Звоните
             </h2>
             <p>

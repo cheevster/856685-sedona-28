@@ -1,0 +1,137 @@
+/* Variables */
+:root {
+    --white: #ffffff;/*основной фон*/
+    --black: #000000; /*текст база  */
+    --black-lighter: #333333; /*текст описание  */
+    --grey: #eeeeee;/*серый база*/
+    --grey-focus:#ebebeb;/*текст-рейтинг */
+    --grey-lighter: #f2f2f2;/*задник сайта  */
+    --grey-darker:#666666;/*текст-рейтинг */
+    --blue: #81b3d2;/*синий база*/
+    --blue-darker: #669EC0;/*наведение на кнопку*/
+    --blue-darkest: #5496BD;/*нажатие кнопки*/
+    --brown: #766357;/*коричневый база */
+    --brown-darker: #604E43;/*наведение на кнопку*/
+    --brown-darkest:#503E33;/*нажатие кнопки*/
+}
+
+body {
+    min-width: 1200px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--black);
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--white);
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+a {
+    text-decoration: none ;
+    color: var(--black);
+    line-height: 26px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 26px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+header {
+    width: 100%;
+    height: 56;
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav {
+    list-style: none;
+    
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.nav a:hover,
+.nav a:focus {
+    color: var(--blue);
+}
+
+.nav a:active {
+    color: var(--black);
+    opacity: 0.3;
+}
+
+.nav a:not[href] {
+    color: var(--brown);
+}
+
+
+.welcome {
+    background-image: url(../img/background-photo.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;  
+}
+
+.blue {
+    color: var(--white);
+
+}
+
+.adv p {
+    color: var(--black-lighter);
+}
+
+.hotel_id h3{
+    line-height: 26px; 
+}
+
+.blue_b {
+    background-color: var(--blue-darker);
+}
+
+.blue_b:hover,
+.blue_b:focus {
+    background-color: var(--blue-darker);
+}
+
+.blue_b:active {
+    background-color: var(--blue-darkest);
+    opacity: 0.3;
+}
+
+.brown_b {
+    background-color: var(--brown);
+}
+
+.brown_b:hover,
+.brown_b:focus {
+    background-color: var(--brown-darker);
+}
+
+.brown_b:active {
+    background-color: var(--brown-darkest);
+    opacity: 0.3;
+}
+
+.visually-hidden {
+    display: none;
+}
