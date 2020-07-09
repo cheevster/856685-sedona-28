@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* Variables */
 :root {
     --white: #ffffff;/*основной фон*/
@@ -15,12 +21,16 @@
     --brown-darkest:#503E33;/*нажатие кнопки*/
 }
 
+.page {
+    height: 100%;
+}
+
 body {
     min-width: 1200px;
-    margin-left: 40px;
-    margin-right: 40px;
+    height: 100%;
+    margin: 0;
     padding: 0;
-    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -29,13 +39,75 @@ body {
     text-align: center;
     background-color: var(--white);
     background-position: center;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;   
 }
 
 a {
     text-decoration: none ;
-    color: var(--black);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Grid */
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.top-page {
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.main-nav a {
     line-height: 26px;
+    color: var(--black);
+    
+}
+
+.main-nav,
+.nav,
+.social,
+.adv,
+.adv-description {
+    list-style: none;
+}
+
+.logo {
+    position: absolute;
+    width: 140px;
+    height: 70px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+    min-height: 56px;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 72px;
+    padding-right: 72px;
+    font-weight: bold;
+    
 }
 
 h1 {
@@ -54,21 +126,12 @@ h3 {
     font-size: 21px;
 }
 
-header {
-    width: 100%;
-    height: 56;
-}
-
 img {
     max-width: 100%;
+    height: auto;
 }
 
-.nav {
-    list-style: none;
-    
-    line-height: 26px;
-    font-weight: bold;
-}
+
 
 .nav a:hover,
 .nav a:focus {
@@ -84,27 +147,73 @@ img {
     color: var(--brown);
 }
 
+.welcome-overlay {
+    background-image: url(../img/polygon.png)    
+}
 
 .welcome {
     background-image: url(../img/background-photo.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;  
+    width: 1200px;
+    height: 509px;      
+}
+.advantages {
+    display: flex;
+    flex-direction: column;
+}
+.adv-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 216px ;
+}
+
+.adv-description {
+    padding: 0;
+    margin: 0;
+}
+
+.adv-description:nth-child(5) {
+    
 }
 
 .blue {
+    padding: 0;
+    margin: 0;
+    display: flex;
     color: var(--white);
+    background-color: var(--blue);
 
 }
 
+.blue p {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.blue section {
+    flex-grow: 1;
+    align-self: center;
+}
+
+
+
+.adv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .adv p {
     color: var(--black-lighter);
 }
+
+
 
 .hotel_id h3{
     line-height: 26px; 
 }
 
-.blue_b {
+.blue_b {    
     background-color: var(--blue-darker);
 }
 
@@ -134,4 +243,19 @@ img {
 
 .visually-hidden {
     display: none;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 100%;
+    min-height: 120px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }

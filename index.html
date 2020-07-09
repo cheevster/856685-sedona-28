@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -9,70 +9,58 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <nav class="main-nav">
-            <ul class="nav">
-                <li>
-                    <a href="">
-                        Информация
+<body class="page-body">
+    <div class="container">
+        <header class="top-page">
+            <nav class="main-nav">
+                <div class="logo">
+                    <a>
+                        <img src="img/logo.svg" alt="Логотип города Седона" width="140" height="71">
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        Фото и видео
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        Карта штата
-                    </a>
-                </li>
-                <li>
-                    <a href="hotels.html">
-                        Гостиницы
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <a>
-                <img src="img/logo.svg" alt="Логотип города Седона" width="140" height="71">
-            </a>
-        </div>
-    </header>
-    <main>
-        <!--хорошо знакомый веб программист мне высказался, что картинки в ЦСС плохая практика, а ты как думаешь? Я планировал и фото и маску туда-->
+                </div>
+                <div class="site-nav">
+                    <ul class="nav">
+                        <li><a href="">Информация</a></li>
+                        <li><a href="">Фото и видео</a></li>
+                        <li><a href="">Карта штата</a></li>
+                        <li><a href="hotels.html">Гостиницы</a></li>
+                    </ul>
+                </div>
+            </nav>            
+        </header>
+    </div>
+    <main class="">        
         <div class="welcome">
             <img src="img/welcome.svg" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="459" height="353">
         </div>
-        <section>
-            <header>
+        <section class="advantages">
+            <header class="adv-header">
                 <h1>
                     Седона — небольшой городок в Аризоне,<br>
                     заслуживающий большего!
-                </h1>
-                <!--Прочитал и обдумал замечание, можно оставлю это заголовком? Мне он как-то нравится-->
+                </h1>                
                 <p>
                     Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
                 </p>
             </header>
-            <ul>
-                <li>
-                    <div class="blue">
-                        <h3>
-                            Настоящий<br>городок
-                        </h3>
+            <ul class="adv-description">
+                <li class="blue">
+                    
+                        <section>
+                            <h3>
+                                Настоящий<br>городок
+                            </h3>
+                            <p>
+                                — №1 —
+                            </p>
+                            <p>
+                                Седона — не аттракцион для туристов,<br> там течёт своя жизнь
+                            </p>
+                        </section>
                         <p>
-                            — №1 —
+                            <img src="img/feature-picture.jpg" width="800" height="256" alt="городской вид">
                         </p>
-                        <p>
-                            Седона — не аттракцион для туристов,<br> там течёт своя жизнь
-                        </p>
-                    </div>
-                    <p>
-                        <img src="img/feature-picture.jpg" width="800" height="256" alt="городской вид">
-                    </p>
+                    
                 </li>
                 <li>
                     <ul class="adv">
@@ -103,19 +91,21 @@
                     </ul>
                 </li>
                 <li>
-                    <p>
-                        <img src="img/layer-5.jpg" width="800" height="256" alt="природа">
-                    </p>
                     <div class="blue">
-                        <h3>
-                            Там есть<br>мост дьявола
-                        </h3>
                         <p>
-                            — №2 —
+                            <img src="img/layer-5.jpg" width="800" height="256" alt="природа">
                         </p>
-                        <p>
-                            Да, по нему можно пройти! Если конечно<br> вы осмелитесь
-                        </p>
+                        <section>
+                            <h3>
+                                Там есть<br>мост дьявола
+                            </h3>
+                            <p>
+                                — №2 —
+                            </p>
+                            <p>
+                                Да, по нему можно пройти! Если конечно<br> вы осмелитесь
+                            </p>
+                        </section>
                     </div>
                 </li>
                 <li>
@@ -197,45 +187,33 @@
                 </div>
             </form>
         </section>
+        <img src="img/map.jpg" width="1200" height="594" alt="Карта">
     </main>
-    <footer>
+    <footer class="page-footer">
+        <section class="contacts">
+            <h2 >Звоните</h2>
+            <p>#visitsedona</p>
+            <p><a href="tel:+74956660266">Тел: +7(495) 666-02-66</a></p>
+        </section>
         <section>
-            <h2 >
-                Звоните
-            </h2>
-            <p>
-                #visitsedona
-            </p>
-            <p>
-                <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
-            </p>
+            <h2>Соцсети</h2>
+            <ul class="social">
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Youtube</a></li>
+            </ul>
         </section>
         <section>
             <h2>
-                Соцсети
+                Разработано
             </h2>
-            <ul>
-                <li>
-                    <a href="#">Twitter</a>
-                </li>
-                <li>
-                    <a href="#">Facebook</a>
-                </li>
-                <li>
-                    <a href="#">Youtube</a>
-                </li>
-            </ul>
+            <p>
+                website by
+                <a href="https://htmlacademy.ru">
+                    <img src="img/logo-htmla.svg" width="115" height="41" alt="Логотип HTML Academy">
+                </a>
+            </p>
         </section>
-        <h2>
-            Разработано
-        </h2>
-        <p>
-            website by
-            <a href="https://htmlacademy.ru">
-                <img src="img/logo-htmla.svg" width="115" height="41" alt="Логотип HTML Academy">
-            </a>
-        </p>
-        <img src="img/map.jpg" width="1200" height="594" alt="Карта">
     </footer>
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
             href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
