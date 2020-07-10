@@ -147,11 +147,12 @@ img {
     color: var(--brown);
 }
 
-.welcome-overlay {
-    background-image: url(../img/polygon.png)    
+.welcome {
+    background-image: url(../img/polygon.png);
+    background-position: bottom;    
 }
 
-.welcome {
+.welcome img {
     background-image: url(../img/background-photo.jpg);
     width: 1200px;
     height: 509px;      
@@ -243,6 +244,55 @@ img {
 
 .visually-hidden {
     display: none;
+}
+
+/* Hotels */
+
+.search-results {
+    display: flex;
+    flex-direction: column;   
+    width: 1200px;
+    min-height: 150px;
+    margin: 0 auto;
+    outline: 5px solid rgba(0, 255, 0, 0.3);
+}
+
+.hotel_idf {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 150px;
+    outline: 5px solid rgb(0, 0, 0);
+}
+
+.name-price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    outline: 5px solid rgb(38, 172, 56);
+    
+}
+
+.name-price h3 {
+    grid-column: 1 / -1;
+    grid-row: 1 /2 ;
+    outline: 5px solid rgb(0, 0, 0);
+}
+
+.name-price div {
+    align-items: left;
+
+}
+
+.hotel_photo {
+    width: 208px;
+    outline: 5px solid rgb(211, 11, 11);
+}
+
+
+.hotel_reit {
+    justify-self: flex-end;
+    outline: 5px solid rgb(163, 15, 106);
 }
 
 .page-footer {
